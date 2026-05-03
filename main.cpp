@@ -7,8 +7,16 @@
 int main() {
     int choice;
 
-    std::cout << "1 - Easy, 2 - Medium, 3 - Hard. ENTER DIFFICULTY: ";
-    std::cin >> choice;
+    while (true) {
+        std::cout << "1 - Easy, 2 - Medium, 3 - Hard. ENTER DIFFICULTY: ";
+        std::cin >> choice;
+
+        if (choice == 1 || choice == 2 || choice == 3) {
+            break;
+        } else {
+            std::cout << "INVALID INPUT ENTER A NUMBER FROM 1 - 3" << std::endl;
+        }
+    }
 
     std::random_device rd;
 
