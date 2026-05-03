@@ -2,12 +2,12 @@
 #define BASELEVEL_H
 
 class BaseLevel {
-    int guesses;
-    int maxNum;
-    int guess;
-    int randNum;
-    BaseLevel();
-    void guessLogic();
+    public:
+        int guesses;
+        int maxNum;
+        int guess;
+        BaseLevel();
+        void guessLogic(int randNum);
 };
 
 #endif
