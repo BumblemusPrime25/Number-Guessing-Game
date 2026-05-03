@@ -3,6 +3,7 @@
 #include "./baseLevel.h"
 #include "./easyLevel.h"
 #include "./mediumLevel.h"
+#include "./hardLevel.h"
 
 int main() {
     int choice;
@@ -35,6 +36,7 @@ int main() {
 
         case 3:
             std::cout << "HARD DIFFICULTY ENGAGED" << std::endl;
+            game = new HardLevel();
 
         default:
             std::cout << "INVALID INPUT" << std::endl;
