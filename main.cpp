@@ -29,17 +29,21 @@ int main() {
         case 1:
             std::cout << "EASY DIFFICULTY ENGAGED" << std::endl;
             game = new EasyLevel();
+            break;
         
         case 2:
             std::cout << "MEDIUM DIFFICULTY ENGAGED" << std::endl;
             game = new MediumLevel();
+            break;
 
         case 3:
             std::cout << "HARD DIFFICULTY ENGAGED" << std::endl;
             game = new HardLevel();
+            break;
 
         default:
             std::cout << "INVALID INPUT" << std::endl;
+            break;
     }
 
     //Define max range of level diff when up to that
