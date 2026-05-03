@@ -10,7 +10,7 @@ BaseLevel::BaseLevel() {
 void BaseLevel::guessLogic(int randNum) {
     std::cout << "You have " << guesses << " to guess a number between 1 and " << maxNum - 1 << std::endl;
     while (guesses > 0) {
-        std::cout << "You have " << guesses << "left" << std::endl;
+        std::cout << "You have " << guesses << " guesses left" << std::endl;
         std::cout << "Enter guess: ";
         std::cin >> guess;
 
